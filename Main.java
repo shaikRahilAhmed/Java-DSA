@@ -444,16 +444,57 @@
 // }
 
 
+// public class Main{
+//     public static int fact(int n){
+//         int fac = 1;
+//         for(int i = 1; i <=n; i++){
+//             fac = fac*if;
+//         }
+//         return fac;
+//     }
+//     public static void main(String args[]){
+//         System.out.println(fact(5));
+//     }
+    
+// }
+
+
+
+        
+//  public class Main{
+//     public static void rev(int values){
+//         int original = values;
+//         int reverse = 0;
+
+//         while(values > 0){
+//             int digit = values % 10;
+//             reverse = reverse * 10 + digit;
+//             values = values / 10;
+//         }
+
+//         if( original == reverse){
+//             System.out.println("its a palindrom");
+//         }else{
+//             System.out.println("its not a paliondrom");
+//         }
+//     }
+//     public static void main(String args[]){
+//         int values = 121;
+//         rev(values);
+//     }
+//  }
+
 public class Main{
-    public static int fact(int n){
-        int fac = 1;
-        for(int i = 1; i <=n; i++){
-            fac = fac*i;
-        }
-        return fac;
+    public static void swap(int a , int b){
+        int temp = a;
+        a = b;
+        b = temp;
+        System.out.println("a="+a);
+        System.out.println("b="+b);
     }
     public static void main(String args[]){
-        System.out.println(fact(5));
+        int a = 2;
+        int b = 3;
+        swap(a,b);
     }
-    
 }
