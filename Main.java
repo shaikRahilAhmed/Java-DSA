@@ -484,17 +484,39 @@
 //     }
 //  }
 
+// public class Main{
+//     public static void swap(int a , int b){
+//         int temp = a;
+//         a = b;
+//         b = temp;
+//         System.out.println("a="+a);
+//         System.out.println("b="+b);
+//     }
+//     public static void main(String args[]){
+//         int a = 2;
+//         int b = 3;
+//         swap(a,b);
+//     }
+// }
+
 public class Main{
-    public static void swap(int a , int b){
-        int temp = a;
-        a = b;
-        b = temp;
-        System.out.println("a="+a);
-        System.out.println("b="+b);
+     public static int linearSearch(int [] arr, int target){
+        if (arr.length == 0){
+            return -1;
+        }
+        for (int index =0; index < arr.length; index++){
+            int element = arr[index];
+            if(element == target){
+                return index;
+            }
+        }
+        return -1;
     }
     public static void main(String args[]){
-        int a = 2;
-        int b = 3;
-        swap(a,b);
+        int [] nums = {6,4,7,2,3,1,5};
+        int target = 3;
+        int ans = linearSearch(nums, target);
+        System.err.println(ans);
     }
+   
 }
